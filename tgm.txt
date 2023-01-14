@@ -1,0 +1,66 @@
+Private School MS
+
+  - High School (G-10, G-11, G-12)
+  - Section (A,B)
+  - Teacher 
+  - Subject (Myanmar, English, Math)
+  - Acamedic 
+  - A -> Teacher -> Grade -> Section -> Subject
+  - Schedule
+  - Student
+
+
+  - Academic year 
+    (id, yearone, yeartwo)
+     - 1, 2021, 2022
+     - 2, 2022, 2023
+
+  - Grade 
+    (id, name, academic_id)
+    -  1, 10, 2
+    -  2, 11, 2
+
+  - Section
+    (id, name, grade_id, desc)
+    - 1, A, 1, boys
+    - 2, B, 1, girls
+    - 3, A, 2, boys
+    - 4, B, 2, girls
+
+  - Students
+    (id, name, section_id, info)
+    -  1, Ko Ko, 1, sjfkldsjfd
+    -  2, Auo Ae, 3, sjfkldsjfd
+    -  3, Su Su, 2, sjfkslfjksljfldsjfd
+
+  - Subject
+    (id, name)
+    - 1, Myanmar
+    - 2, English
+
+  [- Grade_subject (pivot)
+    (id, grade_id, subject_id)
+    - 1, 1, 1
+    - 2, 1, 2
+    - 3, 2, 1]
+
+  - Teacher 
+    (id, name, )
+    - 1, Daw Hla 
+    - 2, U Win
+
+  [- teacher_subject (pivot)
+    - 1, 1, 1
+    - 2, 1, 6]
+
+  - (Schedule)
+    (id, day, time, section_id, teacher_id, subject_id)
+
+
+Form of Schedule
+----------------
+Day -> -----------
+Time -> 1,2,3,4,5,6,7
+Teacher -> 1
+Subject -> 1,6
+Section -> 1
